@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+<com.techware.clickkart.widgets.CustomTextView
+	android:id="@+id/txt_help_title"
+	android:text="@string/title"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:textColor="#3d3d3d
+"
+	android:textStyle="bold"
+	android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/tx_help_details"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:text="@string/title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="#5e5e5e
+"
+		android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+</LinearLayout>

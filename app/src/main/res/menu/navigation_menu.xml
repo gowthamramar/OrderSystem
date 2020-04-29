@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools">
+	
+	<item
+		android:id="@+id/wallet"
+		android:visible="false"
+		android:icon="@drawable/drawyer_wallet"
+		android:title="Wallet" />
+	<item
+		android:id="@+id/location"
+		android:icon="@drawable/drawyer_location"
+		android:title="Your Location" />
+	<item
+		android:id="@+id/order"
+		android:icon="@drawable/drawyer_order_history"
+		android:title="Order History" />
+	<item
+		android:id="@+id/help"
+		android:icon="@drawable/drawer_help"
+		android:title="Help" />
+	<item
+		android:id="@+id/report_problem"
+		android:icon="@drawable/drawer_report_problem"
+		android:title="Report a problem" />
+	<item
+		android:id="@+id/logout"
+		android:icon="@drawable/drawer_logout"
+		android:title="LogOut" />
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".activity.WalkThroughActivity">
+	
+	<androidx.viewpager.widget.ViewPager
+		android:id="@+id/walkThroughViewPager"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight=".25">
+	
+	</androidx.viewpager.widget.ViewPager>
+	
+	<LinearLayout
+		android:paddingBottom="@dimen/_10sdp"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight=".75"
+		android:gravity="center"
+		android:orientation="vertical">
+		
+		<com.merhold.extensiblepageindicator.ExtensiblePageIndicator
+			android:id="@+id/flexibleIndicator"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			android:layout_marginBottom="80dp"
+			app:indicatorPadding="3dp"
+			app:indicatorRadius="4dp"
+			app:indicatorInactiveColor="#60DDDDDD"
+			app:indicatorActiveColor="#dddddd"/>
+		
+		<com.techware.clickkart.widgets.CustomTextView
+			android:id="@+id/txt_getStarted"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/_30sdp"
+			android:layout_marginLeft="@dimen/_30sdp"
+			android:layout_marginRight="@dimen/_30sdp"
+			android:background="@drawable/button_gradient"
+			android:gravity="center"
+			android:text="@string/get_started_btn"
+			android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+			android:textColor="@color/white" />
+	</LinearLayout>
+</LinearLayout>

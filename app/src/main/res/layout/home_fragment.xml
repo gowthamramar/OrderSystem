@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/homeShimmer"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".fragments.HomeFragment">
+	
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/ad_recyclerView"
+				android:layout_marginLeft="@dimen/_3sdp"
+				android:layout_marginRight="@dimen/_3sdp"
+				android:layout_marginTop="@dimen/_5sdp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			
+			<LinearLayout
+				android:id="@+id/ll_home_shopByStore"
+				android:layout_marginTop="@dimen/_5sdp"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+			
+				<com.techware.clickkart.widgets.CustomTextView
+					android:layout_weight=".2"
+					android:paddingLeft="@dimen/_5sdp"
+					android:maxLines="1"
+					android:ellipsize="end"
+					android:textStyle="bold"
+					android:textColor="@color/walkthrough_black"
+					android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+					android:text="@string/shop_by_stores"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			
+				<com.techware.clickkart.widgets.CustomTextView
+					android:id="@+id/txtSeeAllStore"
+					android:layout_weight=".8"
+					android:layout_marginRight="@dimen/_10sdp"
+					android:gravity="center"
+					android:background="@drawable/white_rectangle_see_all"
+					android:textColor="@color/walkthrough_black"
+					android:textAppearance="@style/TextAppearance.AppCompat.Small"
+					android:text="@string/see_all"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/shop_by_stores_recyclerview"
+				android:paddingTop="@dimen/_8sdp"
+				android:paddingLeft="@dimen/_3sdp"
+				android:paddingRight="@dimen/_3sdp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			
+			<com.techware.clickkart.widgets.CustomTextView
+				android:id="@+id/txt_shopByCategories"
+				android:layout_marginTop="@dimen/_10sdp"
+				android:textColor="@color/walkthrough_black"
+				android:paddingLeft="@dimen/_5sdp"
+				android:maxLines="1"
+				android:ellipsize="end"
+				android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+				android:text="@string/shop_by_categories"
+				android:textStyle="bold"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/shopByCategoriesRecyclerview"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/_3sdp"
+				android:layout_marginTop="@dimen/_5sdp"
+				android:layout_marginRight="@dimen/_3sdp" />
+			
+			<LinearLayout
+				android:layout_marginTop="@dimen/_8sdp"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<com.techware.clickkart.widgets.CustomTextView
+					android:id="@+id/txt_pastOrder"
+					android:layout_weight=".2"
+					android:paddingLeft="@dimen/_5sdp"
+					android:maxLines="1"
+					android:ellipsize="end"
+					android:textStyle="bold"
+					android:textColor="@color/walkthrough_black"
+					android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+					android:text="@string/past_orders"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+				
+				<com.techware.clickkart.widgets.CustomTextView
+					android:visibility="gone"
+					android:layout_weight=".8"
+					android:layout_marginRight="@dimen/_10sdp"
+					android:gravity="center"
+					android:background="@drawable/white_rectangle_see_all"
+					android:textColor="@color/walkthrough_black"
+					android:textAppearance="@style/TextAppearance.AppCompat.Small"
+					android:text="@string/see_all"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+				
+			</LinearLayout>
+			
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/pastOrders_recyclerView"
+				android:layout_marginBottom="@dimen/_30sdp"
+				android:layout_marginTop="@dimen/_5sdp"
+				android:layout_marginLeft="@dimen/_3sdp"
+				android:layout_marginRight="@dimen/_3sdp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			
+			<!--<com.techware.clickkart.widgets.CustomTextView
+				android:textColor="@color/walkthrough_black"
+				android:layout_marginLeft="@dimen/_5sdp"
+				android:maxLines="1"
+				android:ellipsize="end"
+				android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+				android:text="@string/hot_deals"
+				android:textStyle="bold"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/hotDealsRecyclerView"
+				android:paddingBottom="@dimen/_20sdp"
+				android:layout_marginTop="@dimen/_5sdp"
+				android:layout_marginLeft="@dimen/_3sdp"
+				android:layout_marginRight="@dimen/_3sdp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />-->
+			
+		</LinearLayout>
+		
+	</androidx.core.widget.NestedScrollView>
+
+</com.facebook.shimmer.ShimmerFrameLayout>

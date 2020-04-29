@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".activity.EditAddressActivity">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+			
+			<LinearLayout
+				android:id="@+id/ll_editAddress_toolbar"
+				android:onClick="finish"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/_40sdp"
+				android:background="@color/homepage_toolbar_color"
+				android:gravity="center"
+				android:orientation="vertical">
+				
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/_35sdp"
+					android:gravity="center"
+					android:orientation="horizontal">
+					
+					<LinearLayout
+						android:id="@+id/ll_NewAddressBackArrow"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/_5sdp"
+						android:layout_weight=".9">
+						
+						<ImageView
+							android:layout_width="@dimen/_22sdp"
+							android:layout_height="@dimen/_22sdp"
+							android:scaleType="centerInside"
+							android:src="@drawable/white_back_arrow" />
+					</LinearLayout>
+					
+					<com.techware.clickkart.widgets.CustomTextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight=".1"
+						android:text="@string/edit_address"
+						android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+						android:textColor="@color/white" />
+				</LinearLayout>
+			
+			</LinearLayout>
+		<androidx.core.widget.NestedScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<ViewFlipper
+					android:id="@+id/addressViewFlipper"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/_15sdp">
+					
+					<include layout="@layout/residential_address" />
+					
+					<include layout="@layout/business_address" />
+				</ViewFlipper>
+				
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/_30sdp"
+						android:layout_marginTop="@dimen/_15sdp"
+						android:layout_marginRight="@dimen/_30sdp"
+						android:orientation="horizontal">
+						
+						<LinearLayout
+							android:id="@+id/ll_resedential"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/_30sdp"
+							android:layout_marginRight="@dimen/_5sdp"
+							android:layout_weight=".5"
+							android:background="@drawable/address_color_resdential_rounded"
+							android:gravity="center"
+							android:orientation="horizontal">
+							
+							<LinearLayout
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content">
+								
+								<ImageView
+									android:layout_width="@dimen/_20sdp"
+									android:layout_height="@dimen/_20sdp"
+									android:scaleType="centerInside"
+									android:src="@drawable/residential_icon" />
+							</LinearLayout>
+							
+							<com.techware.clickkart.widgets.CustomTextView
+								android:id="@+id/txt_resedntial_address"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="@string/resedential"
+								android:textAppearance="@style/TextAppearance.AppCompat.Small"
+								android:textColor="@color/white" />
+						</LinearLayout>
+						
+						<LinearLayout
+							android:id="@+id/ll_business"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/_30sdp"
+							android:layout_marginLeft="@dimen/_5sdp"
+							android:layout_weight=".5"
+							android:background="@drawable/address_business_color_rounded"
+							android:gravity="center"
+							android:orientation="horizontal">
+							
+							<LinearLayout
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content">
+								
+								<ImageView
+									android:layout_width="@dimen/_20sdp"
+									android:layout_height="@dimen/_20sdp"
+									android:scaleType="centerInside"
+									android:src="@drawable/bussiness_icon" />
+							</LinearLayout>
+							
+							<com.techware.clickkart.widgets.CustomTextView
+								android:id="@+id/txt_business_address"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="@string/business"
+								android:textAppearance="@style/TextAppearance.AppCompat.Small"
+								android:textColor="@color/Resedential" />
+						</LinearLayout>
+					
+					</LinearLayout>
+					<LinearLayout
+						android:paddingBottom="@dimen/_30sdp"
+						android:layout_marginTop="80dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						>
+						
+						<com.techware.clickkart.widgets.CustomTextView
+							android:id="@+id/txt_new_address_continue_btn"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/_30sdp"
+							android:layout_gravity="bottom"
+							android:layout_marginLeft="@dimen/_10sdp"
+							android:layout_marginRight="@dimen/_10sdp"
+							android:background="@drawable/button_gradient"
+							android:gravity="center"
+							android:text="@string/btn_continue"
+							android:textAppearance="@style/TextAppearance.AppCompat.Small"
+							android:textColor="@color/white"
+							android:textStyle="bold" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</androidx.core.widget.NestedScrollView>
+		
+		</LinearLayout>
+	
+	</LinearLayout>

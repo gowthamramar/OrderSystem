@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ll_item_store_search"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<com.techware.clickkart.widgets.CustomTextView
+		android:layout_marginTop="@dimen/_10sdp"
+		android:id="@+id/txt_itemStore"
+		android:textStyle="bold"
+		android:text="@string/abc"
+		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+		android:textColor="@color/location_item"
+		android:layout_marginLeft="@dimen/_20sdp"
+		android:layout_marginStart="@dimen/_20sdp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_store_item_decription"
+		android:text="@string/rs_grocery"
+		android:textAppearance="@style/TextAppearance.AppCompat.Small"
+		android:textColor="@color/location_item"
+		android:layout_marginLeft="@dimen/_18sdp"
+		android:layout_marginStart="@dimen/_18sdp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+</LinearLayout>
+	<View
+		android:layout_marginTop="@dimen/_5sdp"
+		android:background="#bbbbbb
+
+"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_1sdp"/>
+
+</LinearLayout>

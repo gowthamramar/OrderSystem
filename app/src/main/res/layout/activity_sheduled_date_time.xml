@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".activity.SheduledDateTimeActivity">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	<LinearLayout
+		android:onClick="finsh"
+	android:orientation="vertical"
+	android:background="@color/homepage_toolbar_color"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		android:layout_marginBottom="@dimen/_10sdp"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:id="@+id/ll_backSheduledDate"
+			android:layout_weight=".9"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:scaleType="centerInside"
+				app:srcCompat="@drawable/white_back_arrow"
+				android:layout_width="@dimen/_20sdp"
+				android:layout_height="@dimen/_20sdp"/>
+		</LinearLayout>
+		
+		<com.techware.clickkart.widgets.CustomTextView
+			android:layout_weight=".1"
+			android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+			android:textColor="@color/white"
+			android:text="@string/sheduled_date_time"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	</LinearLayout>
+</LinearLayout>
+	<com.techware.clickkart.widgets.CustomTextView
+		android:textStyle="bold"
+		android:textSize="@dimen/_13ssp"
+		android:gravity="center"
+		android:layout_marginTop="@dimen/_40sdp"
+		android:textColor="@color/profile_text_color"
+		android:text="@string/schedule_your_date_amp_time"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+<LinearLayout
+	android:layout_gravity="center"
+	android:orientation="horizontal"
+	android:layout_marginTop="@dimen/_30sdp"
+	android:gravity="center"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		android:id="@+id/ll_arrowPrevious"
+		android:gravity="center"
+		android:layout_weight=".4"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<ImageView
+			android:src="@drawable/black_previous_arrow"
+			android:layout_width="@dimen/_20sdp"
+			android:layout_height="@dimen/_20sdp"/>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:gravity="center"
+		android:layout_gravity="center"
+		android:layout_weight=".2"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<com.techware.clickkart.widgets.CustomTextView
+			android:id="@+id/dateTextView"
+			android:textStyle="bold"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="Wednesday"
+			android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+			android:textColor="#43aee5" />
+		
+		<com.techware.clickkart.widgets.CustomTextView
+			android:id="@+id/dateEtxt"
+			android:textColor="#43aee5"
+			android:text="@string/dec_31_2018"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/ll_arrowNext"
+		android:gravity="center"
+		android:layout_weight=".4"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/_20sdp"
+			android:src="@drawable/black_next_arrow" />
+	</LinearLayout>
+</LinearLayout>
+		<com.techware.clickkart.widgets.CustomTextView
+			android:textStyle="bold"
+			android:textSize="@dimen/_13ssp"
+			android:gravity="center"
+			android:layout_marginTop="@dimen/_35sdp"
+			android:textColor="@color/profile_text_color"
+			android:text="@string/schedule_your_amp_time"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<LinearLayout
+			android:id="@+id/ll_time"
+			android:layout_gravity="center"
+			android:layout_marginTop="@dimen/_30sdp"
+			android:gravity="center"
+			android:background="@drawable/addmoney_color_rounded"
+			android:orientation="horizontal"
+			android:layout_width="@dimen/_80sdp"
+			android:layout_height="@dimen/_80sdp">
+			
+			<com.techware.clickkart.widgets.CustomTextView
+				android:id="@+id/txt_hour"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@color/transparent"
+				android:cursorVisible="false"
+				android:enabled="false"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:text="00:00"
+				android:imeOptions="actionNext"
+				android:maxLines="1"
+				android:textColor="#43aee5"
+				android:textColorHint="#43aee5"
+				android:textStyle="bold" />
+		
+		
+		</LinearLayout>
+		
+		
+	<!--<LinearLayout
+		android:layout_marginTop="@dimen/_50sdp"
+		android:gravity="center"
+		android:layout_gravity="center"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<com.techware.clickkart.widgets.CustomTextView
+			android:id="@+id/btn_am_time"
+			android:gravity="center"
+			android:layout_marginRight="@dimen/_10sdp"
+			android:textStyle="bold"
+			android:textColor="@color/keepshoping"
+			android:textAppearance="@style/TextAppearance.AppCompat.Small"
+			android:background="@drawable/clickkart_color_rounded"
+			android:text="AM"
+			android:layout_width="@dimen/_80sdp"
+			android:layout_height="@dimen/_25sdp" />
+		<com.techware.clickkart.widgets.CustomTextView
+			android:id="@+id/btn_pm_time"
+			android:gravity="center"
+			android:textColor="@color/white"
+			android:textAppearance="@style/TextAppearance.AppCompat.Small"
+			android:layout_marginLeft="@dimen/_10sdp"
+			android:background="@drawable/button_gradient"
+			android:text="PM"
+			android:textStyle="bold"
+			android:layout_width="@dimen/_80sdp"
+			android:layout_height="@dimen/_25sdp" />
+	</LinearLayout>-->
+	
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_marginBottom="@dimen/_25sdp"
+		android:layout_gravity="bottom"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<com.techware.clickkart.widgets.CustomTextView
+			android:id="@+id/txt_selected_day"
+			android:layout_marginTop="@dimen/_25sdp"
+			android:gravity="center"
+			android:textSize="@dimen/_13ssp"
+			android:textColor="@color/black"
+			android:text="Wednesday,Dec 31 2018"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<com.techware.clickkart.widgets.CustomTextView
+			android:id="@+id/txt_bookedTime"
+			android:layout_marginBottom="@dimen/_30sdp"
+			android:gravity="center"
+			android:textColor="@color/black"
+			android:text="Time: 00:00 AM - 00:00 AM"
+			android:textSize="@dimen/_13ssp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<com.techware.clickkart.widgets.CustomTextView
+			android:id="@+id/btn_continue_sheduledDate"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/_30sdp"
+			android:layout_marginLeft="@dimen/_10sdp"
+			android:layout_marginRight="@dimen/_10sdp"
+			android:background="@drawable/button_gradient"
+			android:gravity="center"
+			android:text="Continue"
+			android:textStyle="bold"
+			android:textAppearance="@style/TextAppearance.AppCompat.Small"
+			android:textColor="@color/white" />
+	</LinearLayout>
+	
+	
+
+</FrameLayout>

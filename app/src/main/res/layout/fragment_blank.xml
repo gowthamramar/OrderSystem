@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".fragments.WalkThroughFragment">
+	
+	<!-- TODO: Update blank fragment layout -->
+	<LinearLayout
+		android:layout_weight=".3"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_walkThroughTitle"
+		android:textColor="@color/walkthrough_black"
+		android:paddingRight="@dimen/_45sdp"
+		android:layout_marginRight="@dimen/_60sdp"
+		android:layout_marginLeft="@dimen/_30sdp"
+		android:layout_width="match_parent"
+		android:textSize="@dimen/_23ssp"
+		android:layout_height="wrap_content"
+		android:text="Easy Purchase &amp; Fast Delivery.." />
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_walkThroughDescription"
+		android:textColor="@color/walk_descprition"
+		android:layout_marginTop="@dimen/_15sdp"
+		android:layout_marginLeft="@dimen/_30sdp"
+		android:layout_marginRight="@dimen/_30sdp"
+		android:textAppearance="@style/TextAppearance.AppCompat.Small"
+		android:text="@string/easy_purchase_fast_delivery_easy_purchase_fast_delivery_easy_purchase_fast_delivery"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_weight=".7"
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	<ImageView
+		android:id="@+id/walk_img"
+		android:src="@drawable/walk_first_img"
+		android:layout_width="@dimen/_200sdp"
+		android:layout_height="@dimen/_200sdp" />
+	</LinearLayout>
+</LinearLayout>

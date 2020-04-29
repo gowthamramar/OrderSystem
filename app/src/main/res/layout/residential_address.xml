@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:orientation="horizontal"
+		android:paddingLeft="@dimen/_20sdp"
+		android:paddingRight="@dimen/_20sdp">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight=".8">
+			
+			<ImageView
+				android:layout_width="@dimen/_32sdp"
+				android:layout_height="@dimen/_32sdp"
+				android:scaleType="centerInside"
+				android:src="@drawable/location_icon" />
+		</LinearLayout>
+		
+		<com.techware.clickkart.widgets.CustomEditText
+			android:id="@+id/txt_resedential_street"
+			android:imeOptions="actionNext"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/_3sdp"
+			android:maxLines="1"
+			android:singleLine="true"
+			android:layout_weight=".2"
+			android:background="@color/transparent"
+			android:hint="@string/street_address"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large"
+			android:textColor="#7344bad4"
+			android:textColorHint="#7344bad4" />
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginLeft="@dimen/_25sdp"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:layout_marginRight="@dimen/_25sdp"
+		android:background="@color/view_color" />
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:orientation="horizontal"
+		android:paddingLeft="@dimen/_20sdp"
+		android:paddingRight="@dimen/_20sdp">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight=".8">
+			
+			<ImageView
+				android:layout_width="@dimen/_32sdp"
+				android:layout_height="@dimen/_32sdp"
+				android:scaleType="centerInside"
+				android:src="@drawable/home_address_icon" />
+		</LinearLayout>
+		
+		<com.techware.clickkart.widgets.CustomEditText
+			android:id="@+id/txt_resedential_landmark"
+			android:imeOptions="actionNext"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/_3sdp"
+			android:maxLines="1"
+			android:singleLine="true"
+			android:layout_weight=".2"
+			android:background="@color/transparent"
+			android:hint="@string/landmark"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large"
+			android:textColor="#7344bad4"
+			android:textColorHint="#7344bad4" />
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginLeft="@dimen/_25sdp"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:layout_marginRight="@dimen/_25sdp"
+		android:background="@color/view_color" />
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:orientation="horizontal"
+		android:paddingLeft="@dimen/_20sdp"
+		android:paddingRight="@dimen/_20sdp">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight=".8">
+			
+			<ImageView
+				android:layout_width="@dimen/_32sdp"
+				android:layout_height="@dimen/_32sdp"
+				android:scaleType="centerInside"
+				android:src="@drawable/zipicon" />
+		</LinearLayout>
+		
+		<com.techware.clickkart.widgets.CustomEditText
+			android:id="@+id/txt_resedential_zipcode"
+			android:inputType="number"
+			android:imeOptions="actionDone"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/_3sdp"
+			android:maxLines="1"
+			android:singleLine="true"
+			android:layout_weight=".2"
+			android:background="@color/transparent"
+			android:hint="@string/zip_code_address"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large"
+			android:textColor="#7344bad4"
+			android:textColorHint="#7344bad4" />
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginLeft="@dimen/_25sdp"
+		android:layout_marginTop="@dimen/_5sdp"
+		android:layout_marginRight="@dimen/_25sdp"
+		android:background="@color/view_color" />
+	<com.techware.clickkart.widgets.CustomTextView
+		android:layout_marginTop="@dimen/_10sdp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/_25sdp"
+		android:layout_marginRight="@dimen/_30sdp"
+		android:text="Instructions for Delivery (Optional)"
+		android:textAppearance="@style/TextAppearance.AppCompat.Small"
+		android:textColor="#bbbbbb" />
+	
+	<com.techware.clickkart.widgets.CustomTextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/_25sdp"
+		android:layout_marginRight="@dimen/_30sdp"
+		android:text="eg. Your Door Number."
+		android:textAppearance="@style/TextAppearance.AppCompat.Small"
+		android:textColor="#bbbbbb" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_100sdp"
+		android:layout_marginLeft="@dimen/_25sdp"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:layout_marginRight="@dimen/_30sdp"
+		android:background="@drawable/circle"
+		android:gravity="start">
+		
+		<com.techware.clickkart.widgets.CustomEditText
+			android:id="@+id/txt_resedential_instruction"
+			android:imeOptions="actionDone"
+			android:inputType="textMultiLine"
+			android:gravity="start"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent"
+			android:background="@color/transparent"
+			android:hint="Type Here"
+			android:textColorHint="#7344bad4"
+			android:textColor="#7344bad4"
+			android:paddingLeft="@dimen/_10sdp"
+			android:paddingTop="@dimen/_5sdp"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+	</LinearLayout>
+</LinearLayout>
+

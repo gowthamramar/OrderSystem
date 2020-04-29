@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".activity.DeliverAddressActivity">
+	
+	<LinearLayout
+		android:gravity="center"
+		android:id="@+id/ll_delivery_address_toolbar"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintVertical_bias="0"
+		android:orientation="vertical"
+		android:background="@color/homepage_toolbar_color"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_40sdp"
+		>
+		<LinearLayout
+			android:onClick="finsh"
+			android:gravity="center"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/_35sdp">
+			
+			<LinearLayout
+				android:id="@+id/ll_StoreBackArrow"
+				android:layout_weight=".9"
+				android:layout_marginLeft="@dimen/_5sdp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<ImageView
+					android:id="@+id/ll_BackArrowDeliverAddress"
+					android:scaleType="centerInside"
+					android:src="@drawable/white_back_arrow"
+					android:layout_width="@dimen/_22sdp"
+					android:layout_height="@dimen/_22sdp" />
+			</LinearLayout>
+			<com.techware.clickkart.widgets.CustomTextView
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:layout_weight=".1"
+				android:textColor="@color/white"
+				android:text="Delivery Address"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/ll_new_address_round"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintBottom_toTopOf="@+id/address_recyclerview"
+		app:layout_constraintTop_toBottomOf="@+id/ll_delivery_address_toolbar"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintVertical_bias="0"
+		android:layout_marginTop="@dimen/_20sdp"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/_30sdp"
+		android:background="@drawable/address_button_gradient"
+		android:gravity="center"
+		android:orientation="horizontal">
+		<com.techware.clickkart.widgets.CustomTextView
+			android:id="@+id/txt_plus_new_address"
+			android:paddingLeft="@dimen/_15sdp"
+			android:paddingRight="@dimen/_15sdp"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/new_address_"
+			android:textSize="@dimen/_14ssp"
+			android:textColor="@color/white" />
+	</LinearLayout>
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/address_recyclerview"
+		app:layout_constraintTop_toBottomOf="@+id/ll_new_address_round"
+		app:layout_constraintBottom_toTopOf="@+id/txt_continue_new_address"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"/>
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_continue_new_address"
+		android:layout_marginBottom="@dimen/_30sdp"
+		app:layout_constraintTop_toBottomOf="@+id/address_recyclerview"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintVertical_bias="1"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_30sdp"
+		android:layout_marginLeft="@dimen/_15sdp"
+		android:layout_marginRight="@dimen/_15sdp"
+		android:background="@drawable/button_gradient"
+		android:gravity="center"
+		android:text="@string/btn_continue"
+		android:textStyle="bold"
+		android:textAppearance="@style/TextAppearance.AppCompat.Small"
+		android:textColor="@color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>

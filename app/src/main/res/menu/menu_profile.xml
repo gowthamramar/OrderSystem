@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+	<item
+		android:id="@+id/action_profile_edit"
+		android:icon="@drawable/ic_action_edit"
+		android:iconTint="@color/white"
+		android:title="@string/action_edit_profile"
+		app:showAsAction="always" />
+	<item
+		android:id="@+id/action_profile_change_phone_number"
+		android:icon="@drawable/ic_action_voice_call"
+		android:iconTint="@color/white"
+		android:title="@string/action_change_phone_number"
+		app:showAsAction="never" />
+	<item
+		android:id="@+id/action_profile_change_password"
+		android:icon="@drawable/ic_views"
+		android:iconTint="@color/white"
+		android:title="@string/action_change_password"
+		app:showAsAction="never" />
+	<item
+		android:id="@+id/action_profile_privacy"
+		android:icon="@drawable/ic_dearest_friends"
+		android:iconTint="@color/white"
+		android:title="@string/action_set_privacy"
+		app:showAsAction="never" />
+	<item
+		android:id="@+id/action_profile_restricted_profiles"
+		android:icon="@drawable/ic_action_save"
+		android:iconTint="@color/white"
+		android:title="@string/action_restricted_profiles"
+		app:showAsAction="never" />
+</menu>

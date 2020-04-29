@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:layout_marginLeft="@dimen/_5sdp"
+	android:layout_marginRight="@dimen/_5sdp"
+	android:layout_marginTop="@dimen/_5sdp"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<FrameLayout
+		android:layout_width="@dimen/_65sdp"
+		android:layout_height="@dimen/_65sdp">
+		
+		<ImageView
+			android:id="@+id/past_order_image"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerInside"
+			android:src="@drawable/shop_by_store_pics" />
+		<ImageView
+			android:id="@+id/product_plus_icon"
+			android:layout_gravity="center"
+			android:layout_marginBottom="@dimen/_20sdp"
+			android:layout_marginLeft="@dimen/_20sdp"
+			android:src="@drawable/plus_on_product_image"
+			android:layout_width="@dimen/_20sdp"
+			android:layout_height="@dimen/_20sdp" />
+	</FrameLayout>
+
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_past_orderName"
+		android:textSize="@dimen/_14ssp"
+		android:maxLines="1"
+		android:ellipsize="end"
+		android:textColor="#343434"
+		android:text="@string/daily_fresh"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_past_order_price"
+		android:textAppearance="@style/TextAppearance.AppCompat.Small"
+		android:maxLines="1"
+		android:ellipsize="end"
+		android:textColor="#343434"
+		android:text="@string/vegetable_fruits"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+	<!--<FrameLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<com.techware.clickkart.widgets.CustomTextView
+			android:id="@+id/txt_past_order_offer_price"
+			android:textAppearance="@style/TextAppearance.AppCompat.Small"
+			android:maxLines="1"
+			android:ellipsize="end"
+			android:textColor="#7c7c7c"
+			android:text="Rs: 26 / Kg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<View
+			android:layout_marginTop="@dimen/_10sdp"
+			android:background="#7c7c7c"
+			android:layout_width="@dimen/_50sdp"
+			android:layout_height=".5dp"/>
+	</FrameLayout>-->
+	
+
+</LinearLayout>

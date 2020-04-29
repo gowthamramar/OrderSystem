@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".fragments.CategoryFragment">
+	
+	<!-- TODO: Update blank fragment layout -->
+	<com.techware.clickkart.widgets.CustomTextView
+		android:layout_marginTop="@dimen/_20sdp"
+		android:layout_marginLeft="@dimen/_10sdp"
+		android:textColor="@color/walkthrough_black"
+		android:paddingLeft="@dimen/_5sdp"
+		android:maxLines="1"
+		android:ellipsize="end"
+		android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+		android:text="@string/shop_by_categories"
+		android:textStyle="bold"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/CategoriesFragmentRecyclerview"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:layout_marginLeft="@dimen/_3sdp"
+		android:layout_marginRight="@dimen/_3sdp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<!-- TODO: Update blank fragment layout -->
+		
+		<com.techware.clickkart.widgets.CustomTextView
+			android:id="@+id/txtSecondPeopleFavouriteStore"
+			android:textColor="@color/walkthrough_black"
+			android:paddingLeft="@dimen/_5sdp"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:maxLines="1"
+			android:ellipsize="end"
+			android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+			android:text="@string/peoples_favourite_stores"
+			android:textStyle="bold"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/veg_favourite_recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+		<com.techware.clickkart.widgets.CustomTextView
+			android:textColor="@color/walkthrough_black"
+			android:paddingLeft="@dimen/_5sdp"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:maxLines="1"
+			android:ellipsize="end"
+			android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+			android:text="@string/all_stores"
+			android:textStyle="bold"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/veg_all_stores_recyclerview"
+			android:paddingLeft="@dimen/_5sdp"
+			android:layout_marginLeft="@dimen/_3sdp"
+			android:layout_marginRight="@dimen/_3sdp"
+			android:layout_marginTop="@dimen/_5sdp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+		<com.techware.clickkart.widgets.CustomTextView
+			android:id="@+id/txt_yourfav_store"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:textColor="@color/walkthrough_black"
+			android:paddingLeft="@dimen/_5sdp"
+			android:maxLines="1"
+			android:ellipsize="end"
+			android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+			android:text="@string/your_favourite_stores"
+			android:textStyle="bold"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/vegFavouriteStoreRecyclerView"
+			android:layout_marginLeft="@dimen/_3sdp"
+			android:layout_marginRight="@dimen/_3sdp"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/_20sdp"/>
+	</LinearLayout>
+
+</LinearLayout>

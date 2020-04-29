@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".activity.ReportProblemActivity">
+	<LinearLayout
+		android:onClick="finsh"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:background="@color/homepage_toolbar_color"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_marginBottom="@dimen/_10sdp"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout
+				android:id="@+id/ll_report_back"
+				android:layout_weight=".9"
+				android:layout_marginTop="@dimen/_5sdp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:scaleType="centerInside"
+					app:srcCompat="@drawable/white_back_arrow" />
+			</LinearLayout>
+			
+			<com.techware.clickkart.widgets.CustomTextView
+				android:layout_weight=".1"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:textColor="@color/white"
+				android:text="Report a Problem"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+	</LinearLayout>
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_ReportEmail"
+		android:layout_marginTop="@dimen/_20sdp"
+		android:layout_marginLeft="@dimen/_20sdp"
+		android:layout_marginRight="@dimen/_20sdp"
+		android:gravity="center"
+		android:background="@drawable/address_business_color_rounded"
+		android:text="johndoe@clickkart.in"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_20sdp"/>
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_ReportPhone"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:layout_marginLeft="@dimen/_20sdp"
+		android:layout_marginRight="@dimen/_20sdp"
+		android:gravity="center"
+		android:background="@drawable/address_business_color_rounded"
+		android:text="0484 000 0055"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_20sdp"/>
+	<com.techware.clickkart.widgets.CustomTextView
+		android:layout_marginTop="@dimen/_20sdp"
+		android:layout_marginLeft="@dimen/_30sdp"
+		android:layout_marginRight="@dimen/_30sdp"
+		android:textColor="@color/black"
+		android:text="Tell us what went wrong with a previous order
+and request a refund or delivery."
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_120sdp"
+		android:layout_marginLeft="@dimen/_25sdp"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:layout_marginRight="@dimen/_30sdp"
+		android:background="@drawable/circle"
+		android:gravity="start">
+		
+		<EditText
+			android:id="@+id/txt_problem_description"
+			android:gravity="start"
+			android:imeOptions="actionDone"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/transparent"
+			android:hint="Type Here"
+			android:paddingLeft="@dimen/_10sdp"
+			android:paddingTop="@dimen/_5sdp"
+			android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+			android:textColor="#7344bad4"
+			android:textColorHint="#7344bad4" />
+	</LinearLayout>
+	
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txtReportSend"
+		android:layout_marginTop="@dimen/_15sdp"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_30sdp"
+		android:layout_marginLeft="@dimen/_30sdp"
+		android:layout_marginRight="@dimen/_30sdp"
+		android:background="@drawable/button_gradient"
+		android:gravity="center"
+		android:text="@string/send"
+		android:textStyle="bold"
+		android:textAppearance="@style/TextAppearance.AppCompat.Small"
+		android:textColor="@color/white" />
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+	
+</LinearLayout>

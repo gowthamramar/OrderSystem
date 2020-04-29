@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".activity.WalletActivity">
+	<LinearLayout
+		android:orientation="vertical"
+		android:background="@color/homepage_toolbar_color"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_130sdp">
+		<LinearLayout
+			android:layout_marginTop="@dimen/_10sdp"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout
+				android:id="@+id/ll_wallet_back"
+				android:layout_weight=".9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				
+				<ImageView
+					android:layout_width="@dimen/_20sdp"
+					android:layout_height="@dimen/_20sdp"
+					android:scaleType="centerInside"
+					app:srcCompat="@drawable/white_back_arrow" />
+			</LinearLayout>
+			
+			<com.techware.clickkart.widgets.CustomTextView
+				android:layout_weight=".1"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:textColor="@color/white"
+				android:text="@string/wallet"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"/>
+		</LinearLayout>
+		<com.techware.clickkart.widgets.CustomTextView
+			android:layout_marginTop="@dimen/_10sdp"
+			android:gravity="center"
+			android:textColor="@color/white"
+			android:text="@string/your_wallet_balance_is"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<com.techware.clickkart.widgets.CustomTextView
+			android:textStyle="bold"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large"
+			android:gravity="center"
+			android:textColor="@color/white"
+			android:text="@string/inr_250_00"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_marginTop="@dimen/_40sdp"
+		android:layout_gravity="center"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<com.techware.clickkart.widgets.CustomTextView
+			android:gravity="center"
+			android:textSize="@dimen/_12ssp"
+			android:textColor="@color/black"
+			android:text="Add Money"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<com.techware.clickkart.widgets.CustomTextView
+			android:layout_marginTop="@dimen/_10sdp"
+			android:textColor="@color/enter_amount_color"
+			android:gravity="center"
+			android:textSize="@dimen/_12ssp"
+			android:text="Enter Amount Below To Add Money"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<com.techware.clickkart.widgets.CustomTextView
+			android:layout_marginTop="@dimen/_25sdp"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large"
+			android:gravity="center"
+			android:textColor="@color/wallet_ammount_color"
+			android:text="00.00"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<com.techware.clickkart.widgets.CustomTextView
+			android:layout_marginTop="@dimen/_30sdp"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/_30sdp"
+			android:layout_marginLeft="@dimen/_30sdp"
+			android:layout_marginRight="@dimen/_30sdp"
+			android:background="@drawable/button_gradient"
+			android:gravity="center"
+			android:text="@string/add_money"
+			android:textStyle="bold"
+			android:textAppearance="@style/TextAppearance.AppCompat.Small"
+			android:textColor="@color/white" />
+	</LinearLayout>
+
+</LinearLayout>

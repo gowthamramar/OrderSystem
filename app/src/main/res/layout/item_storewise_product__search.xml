@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/_95sdp"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	app:cardCornerRadius="@dimen/_10sdp"
+	app:cardBackgroundColor="@color/white">
+	
+	<LinearLayout
+		android:gravity="center"
+		android:layout_marginLeft="@dimen/_10sdp"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:id="@+id/iv_storeWise__grocery"
+				android:src="@drawable/cabbage"
+				android:layout_width="@dimen/_60sdp"
+				android:layout_height="@dimen/_60sdp"/>
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<com.techware.clickkart.widgets.CustomTextView
+					android:id="@+id/txt_storeWise_itemGrocery"
+					android:layout_marginLeft="@dimen/_10sdp"
+					android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+					android:textColor="@color/cabbage_color"
+					android:text="Cabbage"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_marginLeft="@dimen/_10sdp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					
+					<com.techware.clickkart.widgets.CustomTextView
+						android:id="@+id/txt_storeWise__grocery_price"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:ellipsize="end"
+						android:maxLines="1"
+						android:text="Rs: 15 / Kg"
+						android:textColor="@color/dialog_offer_price"
+						android:textSize="@dimen/_12sdp" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_marginTop="@dimen/_5sdp"
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<LinearLayout
+						android:layout_weight=".5"
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<LinearLayout
+							android:layout_marginLeft="@dimen/_10sdp"
+							android:gravity="center"
+							android:background="@drawable/dialog_quanitity_circle"
+							android:layout_width="@dimen/_20sdp"
+							android:layout_height="@dimen/_20sdp">
+							<com.techware.clickkart.widgets.CustomTextView
+								android:id="@+id/dialog_quantity_decrement"
+								android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+								android:text="-"
+								android:gravity="center"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"></com.techware.clickkart.widgets.CustomTextView>
+						</LinearLayout>
+						
+						<com.techware.clickkart.widgets.CustomTextView
+							android:id="@+id/txt_dialog_quantity"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="@dimen/_3sdp"
+							android:gravity="center"
+							android:inputType="number"
+							android:text="1"
+							android:textAppearance="@style/TextAppearance.AppCompat.Small"></com.techware.clickkart.widgets.CustomTextView>
+						<LinearLayout
+							android:layout_marginLeft="@dimen/_3sdp"
+							android:gravity="center"
+							android:background="@drawable/dialog_quanitity_circle"
+							android:layout_width="@dimen/_20sdp"
+							android:layout_height="@dimen/_20sdp">
+							<com.techware.clickkart.widgets.CustomTextView
+								android:id="@+id/dialog_quantitiy_increment"
+								android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+								android:text="+"
+								android:gravity="center"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"></com.techware.clickkart.widgets.CustomTextView>
+						</LinearLayout>
+					</LinearLayout>
+					<com.techware.clickkart.widgets.CustomTextView
+						android:id="@+id/addtoCart"
+						android:layout_weight=".5"
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/_22sdp"
+						android:paddingLeft="@dimen/_3sdp"
+						android:paddingRight="@dimen/_3sdp"
+						android:background="@drawable/button_gradient"
+						android:gravity="center"
+						android:text="@string/add_to_cart"
+						android:layout_marginRight="@dimen/_10sdp"
+						android:textSize="@dimen/_12sdp"
+						android:textColor="@color/white" />
+				</LinearLayout>
+			
+			</LinearLayout>
+		
+		</LinearLayout>
+	
+	</LinearLayout>
+	
+</androidx.cardview.widget.CardView>

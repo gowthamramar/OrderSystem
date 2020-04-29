@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/_80sdp"
+	android:layout_marginTop="@dimen/_3sdp"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	app:cardBackgroundColor="@color/white">
+	
+<LinearLayout
+	android:gravity="center"
+	android:layout_marginLeft="@dimen/_10sdp"
+	android:layout_marginTop="@dimen/_10sdp"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<ImageView
+			android:id="@+id/img_view_grocery_product"
+			android:layout_width="@dimen/_60sdp"
+			android:layout_height="@dimen/_60sdp"
+			android:src="@drawable/cabbage" />
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<com.techware.clickkart.widgets.CustomTextView
+				android:id="@+id/grocery_productName"
+				android:layout_marginLeft="@dimen/_10sdp"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:textColor="@color/cabbage_color"
+				android:text="Cabbage"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<com.techware.clickkart.widgets.CustomTextView
+				android:id="@+id/txt_grocery_quantity"
+				android:layout_weight=".5"
+				android:layout_marginLeft="@dimen/_10sdp"
+				android:text="Qua: 02"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+			<com.techware.clickkart.widgets.CustomTextView
+				android:id="@+id/txt_grocery_amount"
+				android:textColor="@color/profile_text_color"
+				android:gravity="center"
+				android:layout_weight=".5"
+				android:layout_marginLeft="@dimen/_10sdp"
+				android:text="@string/rs"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+		
+			
+			
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+</LinearLayout>
+</androidx.cardview.widget.CardView>

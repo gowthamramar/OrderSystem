@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".activity.HelpActivity">
+	<LinearLayout
+		android:orientation="vertical"
+		android:background="@color/homepage_toolbar_color"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:onClick="finsh"
+			android:layout_marginBottom="@dimen/_10sdp"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout
+				android:id="@+id/ll_help_back"
+				android:layout_weight=".9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				
+				<ImageView
+					android:layout_width="@dimen/_20sdp"
+					android:layout_height="@dimen/_20sdp"
+					android:scaleType="centerInside"
+					app:srcCompat="@drawable/white_back_arrow" />
+			</LinearLayout>
+			
+			<com.techware.clickkart.widgets.CustomTextView
+				android:layout_weight=".1"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:textColor="@color/white"
+				android:text="Help"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_marginLeft="@dimen/_20sdp"
+			android:layout_marginRight="@dimen/_20sdp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout
+				android:layout_marginBottom="@dimen/_10sdp"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/_25sdp"
+				android:layout_weight=".1"
+				android:background="@drawable/bg_white_rectangle"
+				android:gravity="center">
+				
+				<com.techware.clickkart.widgets.CustomEditText
+					android:id="@+id/txt_home_search"
+					android:layout_weight=".1"
+					android:focusableInTouchMode="false"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/_20sdp"
+					android:background="@color/transparent"
+					android:ellipsize="end"
+					android:hint="@string/search_your_questions_here"
+					android:maxLines="1"
+					android:paddingLeft="@dimen/_10sdp"
+					android:textAppearance="@style/TextAppearance.AppCompat.Small"
+					android:textColor="@color/search_grocery"
+					android:textColorHint="@color/search_grocery" />
+				<LinearLayout
+					android:layout_weight=".9"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<ImageView
+						android:scaleType="centerInside"
+						android:src="@drawable/white_down_arrow"
+						android:layout_width="@dimen/_20sdp"
+						android:layout_height="@dimen/_20sdp"/>
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+		</LinearLayout>
+	</LinearLayout>
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_report_a_problem"
+		android:layout_marginTop="@dimen/_20sdp"
+		android:layout_marginLeft="@dimen/_20sdp"
+		android:layout_marginRight="@dimen/_20sdp"
+		android:gravity="center"
+		android:textColor="#3d3d3d"
+		android:background="@drawable/address_business_color_rounded"
+		android:text="Report a Problem"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_20sdp"/>
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_help_email"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:layout_marginLeft="@dimen/_20sdp"
+		android:layout_marginRight="@dimen/_20sdp"
+		android:textColor="#3d3d3d"
+		android:gravity="center"
+		android:background="@drawable/address_business_color_rounded"
+		android:text="johndoe@clickkart.in"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_20sdp"/>
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_help_phone"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:layout_marginLeft="@dimen/_20sdp"
+		android:layout_marginRight="@dimen/_20sdp"
+		android:gravity="center"
+		android:textColor="#3d3d3d"
+		android:background="@drawable/address_business_color_rounded"
+		android:text="0484 000 0055"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_20sdp"/>
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/rcvw_help"
+		android:layout_marginTop="@dimen/_30sdp"
+		android:layout_marginLeft="@dimen/_20sdp"
+		android:layout_marginRight="@dimen/_20sdp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+</LinearLayout>

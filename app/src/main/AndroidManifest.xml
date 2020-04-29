@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	package="com.techware.clickkart">
+	
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	
+	
+	<application
+		android:name=".app.App"
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:requestLegacyExternalStorage="true"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme"
+		tools:ignore="GoogleAppIndexingWarning">
+		
+		<provider
+			android:name="androidx.core.content.FileProvider"
+			android:authorities="${applicationId}.provider"
+			android:exported="false"
+			android:grantUriPermissions="true">
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/provider_paths" />
+		</provider>
+		
+		<activity
+			android:name=".activity.StoreListActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.CategoryWiseStoreListActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.PaymentFailedActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.PaymentSuccessFullActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.SheduledDateTimeActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme" />
+		<activity
+			android:name=".activity.ReportProblemActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/clickkart"
+			android:windowSoftInputMode="adjustResize|stateHidden" />
+		<activity
+			android:name=".activity.HelpActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.ProfileActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.EditProfileActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/clickkart"
+			android:windowSoftInputMode="adjustResize|stateHidden" />
+		<activity
+			android:name=".activity.WalletActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.OrderHistoryActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.EditAddressActivity"
+			android:windowSoftInputMode="adjustResize|stateHidden"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.OrderDetailsActivity"
+			android:screenOrientation="portrait" />
+		<!--<activity
+			android:name=".activity.UserProfileDrawerActivity"
+			android:label="@string/title_activity_user_profile_drawer"
+			android:theme="@style/AppTheme.NoActionBar" />-->
+		<activity
+			android:name=".activity.PaymentMethodActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.DeliverAddressActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/clickkart"
+			android:windowSoftInputMode="adjustResize|stateHidden" />
+		<activity
+			android:name=".activity.AddNewAddressActivity"
+			android:windowSoftInputMode="adjustResize|stateHidden"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.StoreActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.CartActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.SheduledTimeActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.SearchActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.LocationActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateHidden" />
+		<activity
+			android:name=".activity.HomePageActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.FindLoginSignupActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/clickkart"
+			android:windowSoftInputMode="adjustResize|stateHidden" />
+		<activity
+			android:name=".activity.WalkThroughActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.MainActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.SplashActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+	</application>
+
+</manifest>

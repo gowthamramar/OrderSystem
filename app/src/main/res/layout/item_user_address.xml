@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/ll_address_details"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="@dimen/_15sdp"
+	>
+	
+	<LinearLayout
+		android:layout_marginLeft="@dimen/_15sdp"
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+			<RadioButton
+				android:id="@+id/radio_btn_address"
+				android:layout_weight=".5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:buttonTint="@color/radio_btn_color"
+				android:clickable="false"
+				android:scaleX=".7"
+				android:scaleY=".7" />
+		<LinearLayout
+			android:layout_weight=".2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			
+			<com.techware.clickkart.widgets.CustomTextView
+				android:id="@+id/txt_adress_userName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="John Doe"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:textColor="@color/john_textcolor" />
+			
+			<com.techware.clickkart.widgets.CustomTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/_3sdp"
+				android:text="("
+				android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+			
+			<com.techware.clickkart.widgets.CustomTextView
+				android:id="@+id/txt_adress_addressType"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Home"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+			
+			<com.techware.clickkart.widgets.CustomTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text=")"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+		</LinearLayout>
+		
+		<LinearLayout
+			android:id="@+id/ll_editAddress"
+			android:paddingLeft="@dimen/_12sdp"
+			android:gravity="center"
+			android:layout_weight=".4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+			
+			<ImageView
+				android:layout_width="@dimen/_12sdp"
+				android:layout_height="@dimen/_12sdp"
+				android:scaleType="centerInside"
+				app:srcCompat="@drawable/edit_address_icon" />
+		</LinearLayout>
+	</LinearLayout>
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_userAddress"
+		android:paddingLeft="@dimen/_42sdp"
+		android:ellipsize="end"
+		android:textColor="@color/john_textcolor"
+		android:text="Carnival Infopark, Infopark Campus,"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_user_location"
+		android:textColor="@color/john_textcolor"
+		android:paddingLeft="@dimen/_42sdp"
+		android:ellipsize="end"
+		android:text="Kakkanad, Ernakulam - 682030"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<com.techware.clickkart.widgets.CustomTextView
+		android:id="@+id/txt_userMobNo"
+		android:textColor="@color/john_textcolor"
+		android:paddingLeft="@dimen/_42sdp"
+		android:ellipsize="end"
+		android:text="9895 123 456"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<View
+		android:layout_marginLeft="@dimen/_45sdp"
+		android:layout_marginRight="@dimen/_45sdp"
+		android:layout_marginTop="@dimen/_10sdp"
+		android:background="#37BBBBBB"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"/>
+	
+</LinearLayout>

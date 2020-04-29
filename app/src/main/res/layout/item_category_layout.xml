@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ll_itemCategory"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<LinearLayout
+			android:id="@+id/ll_store_vegetable"
+			android:paddingLeft="@dimen/_10sdp"
+			android:layout_marginTop="@dimen/_15sdp"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<com.techware.clickkart.widgets.CustomTextView
+				android:id="@+id/txt_itemCategoryName"
+				android:textSize="@dimen/_15sdp"
+				android:textStyle="bold"
+				android:textColor="@color/cabbage_color"
+				android:text="@string/vegetables_store_profile"
+				android:layout_weight=".1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+			<LinearLayout
+				android:layout_weight=".9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<ImageView
+					android:id="@+id/iv_arrow"
+					android:scaleType="centerInside"
+					android:src="@drawable/vegetables_arrow_icon"
+					android:layout_width="@dimen/_22sdp"
+					android:layout_height="@dimen/_24sdp"/>
+			</LinearLayout>
+		</LinearLayout>
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/productListRecyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
+</LinearLayout>

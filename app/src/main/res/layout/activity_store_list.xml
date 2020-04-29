@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".activity.StoreListActivity">
+	<LinearLayout
+		android:orientation="vertical"
+		android:background="@color/homepage_toolbar_color"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_marginBottom="@dimen/_10sdp"
+			android:layout_marginTop="@dimen/_10sdp"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout
+				android:id="@+id/ll_list_back"
+				android:layout_weight=".9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				
+				<ImageView
+					android:layout_width="@dimen/_20sdp"
+					android:layout_height="@dimen/_20sdp"
+					android:scaleType="centerInside"
+					app:srcCompat="@drawable/white_back_arrow" />
+			</LinearLayout>
+			
+			<com.techware.clickkart.widgets.CustomTextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight=".1"
+				android:text="@string/store_list_toolbar"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:textColor="@color/white" />
+		</LinearLayout>
+	
+	</LinearLayout>
+	<com.techware.clickkart.widgets.CustomTextView
+		android:layout_marginTop="@dimen/_20sdp"
+		android:layout_marginLeft="@dimen/_10sdp"
+		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+		android:text="@string/all_stores"
+		android:textColor="@color/profile_text_color"
+		android:textStyle="bold"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<androidx.recyclerview.widget.RecyclerView
+		android:paddingLeft="@dimen/_5sdp"
+		android:id="@+id/rcVw_storelist_for_category"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+</LinearLayout>

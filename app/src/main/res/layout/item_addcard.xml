@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_gravity="center|top"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="@drawable/creditcard_background"
+	android:layout_width="@dimen/_200sdp"
+	android:layout_height="@dimen/_80sdp">
+		<LinearLayout
+			android:layout_marginTop="@dimen/_20sdp"
+			android:paddingLeft="@dimen/_30sdp"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				<com.techware.clickkart.widgets.CustomTextView
+					android:textColor="@color/white"
+					android:text="Credit Card"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+				<ImageView
+					android:scaleType="centerInside"
+					android:src="@drawable/creditcard_tik_icon"
+					android:layout_width="@dimen/_20sdp"
+					android:layout_height="@dimen/_20sdp"/>
+			</LinearLayout>
+			<com.techware.clickkart.widgets.CustomTextView
+				android:id="@+id/txt_account_no"
+				android:textColor="@color/white"
+				android:text="2222 **** **** 4444"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+	<ImageView
+		android:id="@+id/iv_card_cancel_icon"
+		android:layout_marginBottom="@dimen/_10sdp"
+		android:layout_marginRight="@dimen/_10sdp"
+		android:scaleType="fitXY"
+		android:layout_gravity="bottom|end"
+		android:layout_width="@dimen/_8sdp"
+		android:layout_height="@dimen/_8sdp"
+		app:srcCompat="@drawable/card_cancel_icon"/>
+	</FrameLayout>
+

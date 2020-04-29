@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".fragments.StoresFragment">
+	<LinearLayout
+		android:id="@+id/ll_home_location"
+		android:background="@color/homepage_toolbar_color"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/items_recyclerview"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/_15sdp"
+			android:layout_marginRight="@dimen/_20sdp"
+			android:orientation="horizontal"
+			tools:listitem="@layout/item_select"></androidx.recyclerview.widget.RecyclerView>
+	</LinearLayout>
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	<ViewFlipper
+		android:id="@+id/store_view_flipper"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<include layout="@layout/home_all_store_category" />
+		
+		<include layout="@layout/home_vegetables_category_store"/>
+		<include layout="@layout/home_fruits_store_category"/>
+		<include layout="@layout/home_sweets_store_category"/>
+		<include layout="@layout/home_oil_and_masala_store_category"/>
+		>
+	</ViewFlipper>
+	
+		
+	</androidx.core.widget.NestedScrollView>
+	
+	
+	
+</LinearLayout>
